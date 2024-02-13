@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Happy Valentines ^_^</title>
+</head>
+<body>
+    <div class="app">
+        <h1>
+            Can you be my Valentines?
+        </h1>
+
+        <div class="buttonGroup">
+            <button class="button-yes"><text>Yes</text></button>
+            <button class="button-no"> <text>No</text></button>
+        </div>
+    </div>
+
+    <script>
+        const yesButton = document.querySelector('button.button-yes');
+        const noButton = document.querySelector('button.button-no');
+        
+        yesButton.addEventListener('click', function() {
+            window.location.href = 'index1.html';
+        });
+        
+        noButton.addEventListener('click', function() {
+            // Add your own logic or action here when the "No" button is clicked
+        });
+        
+        const b = document.querySelector('button.button-no');
+        b.addEventListener("mouseover", moveHover);
+
+        function moveHover(){
+            const i = Math.floor(Math.random() * 500) + 1;
+            const j = Math.floor(Math.random() * 500) + 1;
+
+            b.style.left = i + "px";
+            b.style.top = j + "px";
+        }
+    </script>
+</body>
+</html>
