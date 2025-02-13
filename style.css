@@ -1,0 +1,48 @@
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: rgb(217, 188, 245);
+}
+
+body {
+    margin-top: 30%;
+}
+
+h1 {
+    color: brown;
+    font-size: 40px;
+    display: block;
+    position: fixed;
+    text-align: center;
+}
+
+text {
+    font-size: 15px;
+    text-align: center;
+}
+
+.app {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonGroup {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 30px;
+    background-color: rgb(255, 78, 78);
+    border: none;
+    max-width: 100px;
+    max-height: 30px;
+    border-radius: 10px;
+    position: relative; /* Ensure the button can be moved */
+}
